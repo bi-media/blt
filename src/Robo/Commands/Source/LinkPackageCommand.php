@@ -36,7 +36,7 @@ class LinkPackageCommand extends BltTasks {
    * @throws \Acquia\Blt\Robo\Exceptions\BltException
    */
   public function linkComposer(array $options = [
-    'name' => 'acquia/blt',
+    'name' => 'duden/blt',
     'path' => '../../src/blt',
     'version-constraint' => '*',
   ]) {

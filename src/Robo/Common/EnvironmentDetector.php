@@ -64,7 +64,7 @@ class EnvironmentDetector extends AcquiaDrupalEnvironmentDetector {
       return current($results);
     }
 
-    return sprintf("%s/vendor/acquia/blt/settings/%s.settings.php", dirname(DRUPAL_ROOT), self::getCiEnv());
+    return sprintf("%s/vendor/duden/blt/settings/%s.settings.php", dirname(DRUPAL_ROOT), self::getCiEnv());
   }
 
   /**

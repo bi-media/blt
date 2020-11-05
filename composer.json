@@ -1,5 +1,5 @@
 {
-    "name": "acquia/blt",
+    "name": "duden/blt",
     "type": "composer-plugin",
     "description": "BLT",
     "keywords": [
