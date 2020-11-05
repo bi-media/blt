@@ -1,5 +1,5 @@
 {
-    "name": "acquia/blt-require-dev",
+    "name": "duden/blt-require-dev",
     "type": "metapackage",
     "description": "A wrapper package for BLT's require dev dependencies.",
     "license": "GPL-2.0-only",

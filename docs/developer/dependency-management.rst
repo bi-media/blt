@@ -181,7 +181,7 @@ Patching a project
 
       For information about patch naming, patch application, patch ignoring,
       and patch contribution guidance, see `patches
-      <https://github.com/acquia/blt/blob/10.x/docs/patches.md>`__.
+      <https://github.com/bi-media/blt/blob/10.x/docs/patches.md>`__.
 
    .. tab:: 9.2.x
 

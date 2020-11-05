@@ -143,7 +143,7 @@ Overriding the environment detector
 -----------------------------------
 
 Acquia BLT includes a unified `environment detector class
-<https://github.com/acquia/blt/blob/HEAD/src/Robo/Common/EnvironmentDetector.php>`__
+<https://github.com/bi-media/blt/blob/HEAD/src/Robo/Common/EnvironmentDetector.php>`__
 providing information about the current hosting environment such as the
 stage (``dev``, ``stage``, or ``prod``), provider (Acquia or Pantheon), and
 type (local or CI). The environment detector primarily examines environment
@@ -171,12 +171,12 @@ Acquia BLT's Environment Detector will discover your overrides using PSR4 and
 re-dispatch any method calls to your custom implementation.
 
 As a reference implementation, the `BLT Tugboat plugin
-<https://github.com/acquia/blt-tugboat>`__ illustrates how to override the
+<https://github.com/bi-media/blt-tugboat>`__ illustrates how to override the
 Environment Detector in practice.
 
 For more discussion on the Environment Detector architecture, design choices,
 and performance considerations, see `this issue
-<https://github.com/acquia/blt/issues/3804#issuecomment-523623896>`__.
+<https://github.com/bi-media/blt/issues/3804#issuecomment-523623896>`__.
 
 
 .. _blt-modify-blt-config:
@@ -186,7 +186,7 @@ Modifying your Acquia BLT configuration
 
 You can customize your Acquia BLT configuration by overriding the value of
 default variable values. The `build.yml
-<https://github.com/acquia/blt/blob/HEAD/config/build.yml>`__ file contains
+<https://github.com/bi-media/blt/blob/HEAD/config/build.yml>`__ file contains
 the default values of all Acquia BLT variables.
 
 
@@ -198,7 +198,7 @@ Overriding a variable value
 Acquia BLT loads configuration values from the following list of YAML files,
 in the listed order:
 
-#.  ``vendor/acquia/blt/config/build.yml``
+#.  ``vendor/duden/blt/config/build.yml``
 #.  ``blt/blt.yml``
 #.  ``blt/[environment].blt.yml``
 #.  ``docroot/sites/[site]/blt.yml``
@@ -276,7 +276,7 @@ The following list includes some commonly customized Acquia BLT targets:
    -  **artifact:build**: To modify the behavior of the ``artifact:build``
       target, you may override Acquia BLT's ``deploy`` configuration. For
       example contents, review the ``deploy`` key in the `build.yml
-      <https://github.com/acquia/blt/blob/HEAD/config/build.yml#L54>`__ file.
+      <https://github.com/bi-media/blt/blob/HEAD/config/build.yml#L54>`__ file.
 
       More specifically, you can modify the build artifact using the
       following methods:
@@ -284,7 +284,7 @@ The following list includes some commonly customized Acquia BLT targets:
       -  Change which files are rsynced to the artifact by providing your
          own ``deploy.exclude_file`` value in the ``blt.yml`` file. For
          example contents, review the `upstream deploy-exclude.txt
-         <https://github.com/acquia/blt/blob/HEAD/scripts/blt/deploy/deploy-exclude.txt>`__
+         <https://github.com/bi-media/blt/blob/HEAD/scripts/blt/deploy/deploy-exclude.txt>`__
          file:
 
          .. code-block:: yaml
@@ -293,7 +293,7 @@ The following list includes some commonly customized Acquia BLT targets:
                 exclude_file: ${repo.root}/blt/deploy/rsync-exclude.txt
 
       -  If you want to add to the `upstream deploy-exclude.txt
-         <https://github.com/acquia/blt/blob/HEAD/scripts/blt/deploy/deploy-exclude.txt>`__
+         <https://github.com/bi-media/blt/blob/HEAD/scripts/blt/deploy/deploy-exclude.txt>`__
          file instead of overriding it, you don't need to define your own
          ``deploy.exclude_file``. Instead, leverage the
          ``deploy-exclude-additions.txt`` file found under the top-level
@@ -308,7 +308,7 @@ The following list includes some commonly customized Acquia BLT targets:
       -  Change which files Git ignores in the artifact by providing your own
          ``deploy.gitignore_file`` value in the ``blt.yml`` file. For example
          contents, review the `upstream .gitignore
-         <https://github.com/acquia/blt/blob/HEAD/scripts/blt/deploy/.gitignore>`__ file.
+         <https://github.com/bi-media/blt/blob/HEAD/scripts/blt/deploy/.gitignore>`__ file.
 
          .. code-block:: yaml
 
@@ -379,7 +379,7 @@ The following list includes some commonly customized Acquia BLT targets:
    -  **tests:behat:run**: To modify the behavior of the ``tests:behat:run``
       target, you may override Acquia BLT's Behat configuration. For examples,
       review the `build.yml
-      <https://github.com/acquia/blt/blob/HEAD/config/build.yml#L2>`__ file.
+      <https://github.com/bi-media/blt/blob/HEAD/config/build.yml#L2>`__ file.
 
    -  **tests:phpcs:sniff:all**: To change the behavior of the
       ``tests:phpcs:sniff:all`` target, you may copy ``phpcs.xml.dist`` to

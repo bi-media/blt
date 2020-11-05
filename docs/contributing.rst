@@ -9,10 +9,10 @@ on these guidelines may be closed.
 
 Acquia BLT feature requests, bugs, support requests, and milestones are
 tracked with the `BLT GitHub issue queue
-<https://github.com/acquia/blt/issues>`__.
+<https://github.com/bi-media/blt/issues>`__.
 
 Note the branch statuses documented on the `GitHub page
-<https://github.com/acquia/blt/tree/9.2.x>`__:
+<https://github.com/bi-media/blt/tree/9.2.x>`__:
 
 - Pull requests for enhancements will be accepted only for the active
   development branch (11.x and 10.x).
@@ -104,7 +104,7 @@ Submitting pull requests
 ------------------------
 
 Note the branch statuses documented on the `GitHub page
-<https://github.com/acquia/blt>`__:
+<https://github.com/bi-media/blt>`__:
 
 - Pull requests for enhancements will only be accepted for the active
   development branch (11.x or 10.x).
@@ -173,7 +173,7 @@ your test project, for example:
 Your ``blted`` project will now have a `Composer <https://getcomposer.org/>`__
 dependency on your local clone of Acquia BLT through a symlink. You can make
 changes to files in ``blt`` and see them instantly reflected in
-``blted/vendor/acquia/blt``.
+``blted/vendor/duden/blt``.
 
 
 .. _blt-testing:

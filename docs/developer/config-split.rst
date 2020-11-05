@@ -170,7 +170,7 @@ splits. To create the "local" split manually, complete the following process:
    This Drush command allows the configuration split to recognize the local
    split is active. You rely on Acquia BLT to display the split as active on
    local computers using a `settings.php include
-   <https://github.com/acquia/blt/blob/9.x/settings/config.settings.php#L22>`__.
+   <https://github.com/bi-media/blt/blob/9.x/settings/config.settings.php#L22>`__.
 
 With your ``local`` split ready, continue the following process:
 
@@ -255,7 +255,7 @@ and won't create the splits for you.
       management to manage whether the split is active. Instead, you will
       rely on Acquia BLT to enable the split, when appropriate, through a
       `settings.php include
-      <https://github.com/acquia/blt/blob/9.x/settings/config.settings.php#L22>`__.
+      <https://github.com/bi-media/blt/blob/9.x/settings/config.settings.php#L22>`__.
       If you are using Acquia BLT, the ``include`` must load for you as a
       consequence of including ``blt.settings.php`` in your ``settings.php``
       file. You may override the logic by configuring ``$split`` in

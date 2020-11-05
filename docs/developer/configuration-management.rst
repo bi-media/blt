@@ -180,7 +180,7 @@ Acquia is working on a better way of preventing the codebase and database from
 becoming out of sync other than manually monitoring module updates. Find more
 information on these issues at `Features and contributed module updates
 <https://www.drupal.org/node/2745685>`__, and `Testing for schema changes to
-stored configuration <https://github.com/acquia/blt/issues/842>`__.
+stored configuration <https://github.com/bi-media/blt/issues/842>`__.
 
 Ensuring the integrity of stored configuration
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

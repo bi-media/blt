@@ -27,7 +27,7 @@ using the following steps:
 
    .. code-block:: bash
 
-      mkdir blt/deploy && cp vendor/acquia/blt/scripts/blt/deploy/deploy-exclude.txt blt/deploy/deploy-exclude.txt
+      mkdir blt/deploy && cp vendor/duden/blt/scripts/blt/deploy/deploy-exclude.txt blt/deploy/deploy-exclude.txt
 
       deploy:
         exclude_file: ${repo.root}/blt/deploy/deploy_exclude.txt

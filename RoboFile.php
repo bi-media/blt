@@ -134,7 +134,7 @@ class RoboFile extends Tasks implements LoggerAwareInterface {
   }
 
   /**
-   * Pushes to acquia/blt-project.
+   * Pushes to duden/blt-project.
    *
    * @param array $options
    *   Options.
@@ -146,9 +146,9 @@ class RoboFile extends Tasks implements LoggerAwareInterface {
   public function subtreePushBltProject(array $options = [
     'branch' => NULL,
   ]) {
-    $this->say("Pushing to acquia/blt-project");
+    $this->say("Pushing to duden/blt-project");
     $prefix = "subtree-splits/blt-project";
-    $url = "git@github.com:acquia/blt-project.git";
+    $url = "git@github.com:duden/blt-project.git";
     if (!$options['branch']) {
       $options['branch'] = $this->getCurrentBranch();
     }
@@ -158,7 +158,7 @@ class RoboFile extends Tasks implements LoggerAwareInterface {
   }
 
   /**
-   * Pushes to acquia/blt-require-dev.
+   * Pushes to duden/blt-require-dev.
    *
    * @param array $options
    *   Options.
@@ -170,9 +170,9 @@ class RoboFile extends Tasks implements LoggerAwareInterface {
   public function subtreePushBltRequireDev(array $options = [
     'branch' => NULL,
   ]) {
-    $this->say("Pushing to acquia/blt-require-dev");
+    $this->say("Pushing to duden/blt-require-dev");
     $prefix = "subtree-splits/blt-require-dev";
-    $url = "git@github.com:acquia/blt-require-dev.git";
+    $url = "git@github.com:duden/blt-require-dev.git";
     if (!$options['branch']) {
       $options['branch'] = $this->getCurrentBranch();
     }
@@ -199,7 +199,7 @@ class RoboFile extends Tasks implements LoggerAwareInterface {
     $changes = $this->sortChanges($log, $github_token);
 
     $text = '';
-    $text .= "[Full Changelog](https://github.com/acquia/blt/compare/$prev_tag...$tag)\n\n";
+    $text .= "[Full Changelog](https://github.com/bi-media/blt/compare/$prev_tag...$tag)\n\n";
     if (!empty($changes['breaking'])) {
       $text .= "**Breaking changes**\n\n";
       $text .= $this->processReleaseNotesSection($changes['breaking']);
@@ -562,7 +562,7 @@ class RoboFile extends Tasks implements LoggerAwareInterface {
     $tag,
     $description,
     $github_token,
-    $uri = 'acquia/blt'
+    $uri = 'duden/blt'
   ) {
     $result = $this->taskGitHubRelease($tag)
       ->uri($uri)

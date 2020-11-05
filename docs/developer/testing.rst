@@ -32,7 +32,7 @@ Test directory structure
 
 This directory contains all projects tests, grouped by testing technology. For
 all configuration related to builds that actually run these tests, see the
-`blt <https://github.com/acquia/blt>`__ directory.
+`blt <https://github.com/bi-media/blt>`__ directory.
 
 .. code-block:: text
 

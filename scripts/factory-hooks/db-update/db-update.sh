@@ -31,12 +31,12 @@ uri=`/usr/bin/env php /mnt/www/html/$sitegroup.$env/hooks/acquia/uri.php $sitegr
 IFS='.' read -a name <<< "${uri}"
 
 # BLT executable:
-blt="/mnt/www/html/$sitegroup.$env/vendor/acquia/blt/bin/blt"
+blt="/mnt/www/html/$sitegroup.$env/vendor/duden/blt/bin/blt"
 
 # Create and set Drush cache to unique local temporary storage per site.
 # This approach isolates drush processes to completely avoid race conditions
-# that persist after initial attempts at addressing in BLT: https://github.com/acquia/blt/pull/2922
-cache_dir=`/usr/bin/env php /mnt/www/html/$sitegroup.$env/vendor/acquia/blt/scripts/blt/drush/cache.php $sitegroup $env $uri`
+# that persist after initial attempts at addressing in BLT: https://github.com/bi-media/blt/pull/2922
+cache_dir=`/usr/bin/env php /mnt/www/html/$sitegroup.$env/vendor/duden/blt/scripts/blt/drush/cache.php $sitegroup $env $uri`
 
 echo "Generated temporary drush cache directory: $cache_dir."
 

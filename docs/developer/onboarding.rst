@@ -36,7 +36,7 @@ what's most important to do and know before getting started:
    in your project's README file.
 -  If you need help, talk to your project team first, since they may have
    already encountered any issue you are experiencing. Then post an issue in
-   the `Acquia BLT issue queue <https://github.com/acquia/blt/issues>`__. The
+   the `Acquia BLT issue queue <https://github.com/bi-media/blt/issues>`__. The
    issue queue isn't only for bugs—we welcome feedback on all aspects of the
    developer experience.
 -  Verify that your local system and network meet the

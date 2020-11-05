@@ -109,7 +109,7 @@ excluded files on your own.
 Alternately, you could leverage the ``post-drupal-scaffold-cmd`` script hook
 to apply patches after Drupal Scaffold is finished. See this
 `composer-patches issue
-<https://github.com/acquia/blt/issues/1135#issuecomment-285404408>`__
+<https://github.com/bi-media/blt/issues/1135#issuecomment-285404408>`__
 for more details.
 
 Also note that there is an issue in the Drupal packaging system that makes it

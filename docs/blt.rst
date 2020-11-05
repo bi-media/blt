@@ -17,7 +17,7 @@ Acquia BLT
    /blt/support/
 
 Acquia BLT (Build and Launch Tool), `available on GitHub
-<https://github.com/acquia/blt>`__, provides an automation layer for testing,
+<https://github.com/bi-media/blt>`__, provides an automation layer for testing,
 building, and launching Drupal 8 applications. Acquia BLT generates new Drupal
 projects using a standardized template based on Acquia Professional
 Services' best practices.

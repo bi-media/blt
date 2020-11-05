@@ -185,7 +185,7 @@ class SandboxManager {
         'symlink' => TRUE,
       ],
     ];
-    $composer_json_contents->require->{'acquia/blt'} = '*@dev';
+    $composer_json_contents->require->{'duden/blt'} = '*@dev';
     $composer_json_contents->repositories->{'blt-require-dev'} = (object) [
       'type' => 'path',
       'url' => $this->bltRequireDevPackageDir,
@@ -193,7 +193,7 @@ class SandboxManager {
         'symlink' => TRUE,
       ],
     ];
-    $composer_json_contents->{'require-dev'}->{'acquia/blt-require-dev'} = 'dev-master';
+    $composer_json_contents->{'require-dev'}->{'duden/blt-require-dev'} = 'dev-master';
     $this->fs->dumpFile($composer_json_path,
       json_encode($composer_json_contents, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
   }
@@ -224,7 +224,7 @@ class SandboxManager {
   /**
    * Create temporary copy of blt-require-dev.
    *
-   * This new dir will be used as the reference path for acquia/blt-require-dev
+   * This new dir will be used as the reference path for duden/blt-require-dev
    * in local testing. It cannot be a subdir of blt because Composer cannot
    * reference a package nested within another package.
    */

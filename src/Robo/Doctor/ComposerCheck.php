@@ -66,7 +66,7 @@ class ComposerCheck extends DoctorCheck {
    *   Array.
    */
   protected function setTemplateComposerJson() {
-    $file_name = $this->getConfigValue('repo.root') . '/vendor/acquia/blt/subtree-splits/blt-project/composer.json';
+    $file_name = $this->getConfigValue('repo.root') . '/vendor/duden/blt/subtree-splits/blt-project/composer.json';
     if (file_exists($file_name)) {
       $template_composer_json = json_decode(file_get_contents($file_name, TRUE), TRUE);
       $this->templateComposerJson = $template_composer_json;
@@ -132,10 +132,10 @@ class ComposerCheck extends DoctorCheck {
    * Check require.
    */
   protected function checkRequire() {
-    if (!empty($this->composerJson['require-dev']['acquia/blt'])) {
+    if (!empty($this->composerJson['require-dev']['duden/blt'])) {
       $this->logProblem('require', [
-        "acquia/blt is defined as a development dependency in composer.json",
-        "  Move acquia/blt out of the require-dev object and into the require object in composer.json.",
+        "duden/blt is defined as a development dependency in composer.json",
+        "  Move duden/blt out of the require-dev object and into the require object in composer.json.",
         "  This is necessary for BLT settings files to be available at runtime in production.",
       ], 'error');
     }
@@ -175,10 +175,10 @@ class ComposerCheck extends DoctorCheck {
    * Check BLT.
    */
   protected function checkBltRequireDev() {
-    if (empty($this->composerJson['require-dev']['acquia/blt-require-dev'])) {
-      $this->logProblem('acquia/blt-require-dev', [
-        "acquia/blt-require-dev is not defined as a development dependency in composer.json",
-        "  Move add acquia/blt-require-dev to the require-dev object in composer.json.",
+    if (empty($this->composerJson['require-dev']['duden/blt-require-dev'])) {
+      $this->logProblem('duden/blt-require-dev', [
+        "duden/blt-require-dev is not defined as a development dependency in composer.json",
+        "  Move add duden/blt-require-dev to the require-dev object in composer.json.",
         "  This is necessary for BLT to run development tasks.",
       ], 'error');
     }
@@ -202,7 +202,7 @@ class ComposerCheck extends DoctorCheck {
       $this->logProblem("composer.$key1.$key2", [
         "The Composer configuration for $key1.$key2 differs from BLT's default, recommended values.",
         "  Change your configuration to match BLT's defaults in",
-        "  vendor/acquia/blt/subtree-splits/blt-project/composer.json.",
+        "  vendor/duden/blt/subtree-splits/blt-project/composer.json.",
       ], 'error');
     }
   }

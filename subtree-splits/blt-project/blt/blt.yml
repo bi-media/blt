@@ -1,6 +1,6 @@
 # This file contains your BLT configuration. For a list of all available
 # properties with current values run `blt config:dump`. Default values come
-# from vendor/acquia/blt/config/build.yml.
+# from vendor/duden/blt/config/build.yml.
 #
 # These values can be overridden at the command line using `--define`, i.e.:
 # blt setup --define project.profile.name=minimal

@@ -23,7 +23,7 @@ services:
 env:
   global:
     # ORCA configuration.
-    - ORCA_SUT_NAME=acquia/blt
+    - ORCA_SUT_NAME=duden/blt
     - ORCA_SUT_BRANCH=11.x
     - ORCA_VERSION=dev-master
     # Custom configuration.

@@ -18,7 +18,7 @@ Local configuration
 #. Run ``blt recipes:multisite:init``. It's suggested to use an easy
    machine name (rather than a domain name) for your website for `maximum
    compatibility with other BLT features
-   <https://github.com/acquia/blt/pull/3503#issuecomment-477416463>`__.
+   <https://github.com/bi-media/blt/pull/3503#issuecomment-477416463>`__.
 
    Running ``blt recipes:multisite:init``\ performs the following:
 
@@ -138,7 +138,7 @@ through:
          require '/var/www/site-php/mysite/multisitename-settings.inc';
       }
 
-      require DRUPAL_ROOT . "/../vendor/acquia/blt/settings/blt.settings.php";
+      require DRUPAL_ROOT . "/../vendor/duden/blt/settings/blt.settings.php";
 
 Drush aliases
 ~~~~~~~~~~~~~

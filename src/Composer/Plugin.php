@@ -24,7 +24,7 @@ class Plugin implements PluginInterface, EventSubscriberInterface {
   /**
    * Package name.
    */
-  const PACKAGE_NAME = 'acquia/blt';
+  const PACKAGE_NAME = 'duden/blt';
 
   /**
    * BLT config directory.
@@ -144,7 +144,7 @@ class Plugin implements PluginInterface, EventSubscriberInterface {
    *   Event.
    */
   public function onPostCmdEvent(Event $event) {
-    // Only install the template files if acquia/blt was installed.
+    // Only install the template files if duden/blt was installed.
     if (isset($this->bltPackage)) {
       $version = $this->bltPackage->getVersion();
       $this->executeBltUpdate($version);
@@ -159,7 +159,7 @@ class Plugin implements PluginInterface, EventSubscriberInterface {
   }
 
   /**
-   * Gets the acquia/blt package, if it is the package being operated on.
+   * Gets the duden/blt package, if it is the package being operated on.
    *
    * @param mixed $operation
    *   Op.
@@ -174,7 +174,7 @@ class Plugin implements PluginInterface, EventSubscriberInterface {
     elseif ($operation instanceof UpdateOperation) {
       $package = $operation->getTargetPackage();
     }
-    if (isset($package) && $package instanceof PackageInterface && $package->getName() == 'acquia/blt') {
+    if (isset($package) && $package instanceof PackageInterface && $package->getName() == 'duden/blt') {
       return $package;
     }
     return NULL;
@@ -193,10 +193,10 @@ class Plugin implements PluginInterface, EventSubscriberInterface {
       $this->io->write('<info>Creating BLT templated files...</info>');
       if ($this->isNewProject()) {
         // The BLT command will not work because the .git dir doesn't exist yet.
-        $command = $this->getVendorPath() . '/acquia/blt/bin/blt internal:create-project --ansi';
+        $command = $this->getVendorPath() . '/duden/blt/bin/blt internal:create-project --ansi';
       }
       else {
-        $command = $this->getVendorPath() . '/acquia/blt/bin/blt internal:add-to-project --ansi -n';
+        $command = $this->getVendorPath() . '/duden/blt/bin/blt internal:add-to-project --ansi -n';
       }
       $success = $this->executeCommand($command, [], TRUE);
       if (!$success) {
@@ -234,14 +234,14 @@ class Plugin implements PluginInterface, EventSubscriberInterface {
    * Determine if this is a project being newly created.
    *
    * This would execute in the context of
-   * `composer create-project acquia/blt-project`.
+   * `composer create-project duden/blt-project`.
    *
    * @return bool
    *   TRUE if this is a newly create project.
    */
   protected function isNewProject() {
     $composer_json = json_decode(file_get_contents($this->getRepoRoot() . '/composer.json'), TRUE);
-    $templates = ['acquia/blt-project', 'acquia/blted8'];
+    $templates = ['duden/blt-project', 'duden/blted8'];
     if (isset($composer_json['name']) && in_array($composer_json['name'], $templates)) {
       return TRUE;
     }

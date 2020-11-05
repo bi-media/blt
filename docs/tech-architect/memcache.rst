@@ -49,6 +49,6 @@ permanently caches these static bins by default.
      $settings['memcache']['key_prefix'] = $site_dir;
    }
 
-   require DRUPAL_ROOT . "/../vendor/acquia/blt/settings/memcache.settings.php";
+   require DRUPAL_ROOT . "/../vendor/duden/blt/settings/memcache.settings.php";
 
 .. Next review date 20200423

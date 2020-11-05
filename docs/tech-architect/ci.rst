@@ -80,7 +80,7 @@ the following steps:
    The preceding code will generate an :doc:`acquia-pipelines.yml file
    </acquia-cloud/develop/pipelines/yaml/>` in your project root based on
    `BLT's default acquia-pipelines.yml file
-   <https://github.com/acquia/blt/blob/10.x/scripts/pipelines/acquia-pipelines.yml>`__.
+   <https://github.com/bi-media/blt/blob/10.x/scripts/pipelines/acquia-pipelines.yml>`__.
 
 #. Change the :doc:`acquia-pipelines.yml file
    </acquia-cloud/develop/pipelines/yaml/>` to
