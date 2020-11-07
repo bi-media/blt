@@ -83,10 +83,10 @@ class ComposerCheck extends DoctorCheck {
    * Check require.
    */
   protected function checkRequire() {
-    if (!empty($this->composerJson['require-dev']['duden/blt'])) {
+    if (!empty($this->composerJson['require-dev']['acquia/blt'])) {
       $this->logProblem('require', [
-        "duden/blt is defined as a development dependency in composer.json",
-        "  Move duden/blt out of the require-dev object and into the require object in composer.json.",
+        "acquia/blt is defined as a development dependency in composer.json",
+        "  Move acquia/blt out of the require-dev object and into the require object in composer.json.",
         "  This is necessary for BLT settings files to be available at runtime in production.",
       ], 'error');
     }

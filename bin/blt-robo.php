@@ -36,7 +36,7 @@ function find_repo_root() {
     array_unshift($possible_repo_roots, $_SERVER['PWD']);
   }
   foreach ($possible_repo_roots as $possible_repo_root) {
-    if ($repo_root = find_directory_containing_files($possible_repo_root, ['vendor/duden/blt', 'vendor/autoload.php'])) {
+    if ($repo_root = find_directory_containing_files($possible_repo_root, ['vendor/acquia/blt', 'vendor/autoload.php'])) {
       return $repo_root;
     }
   }

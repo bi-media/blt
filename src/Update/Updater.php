@@ -101,7 +101,7 @@ class Updater {
     $this->updateClassName = $update_class;
     $this->fs = new Filesystem();
     $this->setRepoRoot($repo_root);
-    $this->setBltRoot($repo_root . '/vendor/duden/blt');
+    $this->setBltRoot($repo_root . '/vendor/acquia/blt');
     $this->composerJsonFilepath = $this->repoRoot . '/composer.json';
     $this->composerRequiredJsonFilepath = $this->getBltRoot() . '/composer.required.json';
     $this->composerSuggestedJsonFilepath = $this->getBltRoot() . '/composer.suggested.json';
@@ -128,7 +128,7 @@ class Updater {
    * The filepath of the repository root directory.
    *
    * This directory is expected to contain the composer.json that defines
-   * duden/blt as a dependency.
+   * acquia/blt as a dependency.
    *
    * @param string $repoRoot
    *   The filepath of the repository root directory.

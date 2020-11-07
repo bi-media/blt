@@ -28,7 +28,7 @@ read -p "Continue? (y/n) " -n 1 -r
 echo ""
 
 if [[ $REPLY =~ ^[Yy]$ ]]; then
-  # composer require duden/blt:~8
+  # composer require acquia/blt:~8
 
   # Move values from custom/build.yml to blt.yml.
   # @todo Check if this exists and if it exactly matches core value.
@@ -45,12 +45,12 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
 
 
   # Remove unneeded files.
-  ./vendor/duden/blt/scripts/blt/update.sh
+  ./vendor/acquia/blt/scripts/blt/update.sh
 
   # Install (new) alias
   echo "Installing blt alias"
-  yes | ./vendor/duden/blt/blt.sh blt:init:shell-alias
-  ./vendor/duden/blt/blt.sh init
+  yes | ./vendor/acquia/blt/blt.sh blt:init:shell-alias
+  ./vendor/acquia/blt/blt.sh init
   composer update
 
   echo "Update complete. Please do the following:"

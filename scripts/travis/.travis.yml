@@ -9,7 +9,7 @@ php: "7.3"
 env:
   global:
     - COMPOSER_BIN=$TRAVIS_BUILD_DIR/vendor/bin
-    - BLT_DIR=$TRAVIS_BUILD_DIR/vendor/duden/blt
+    - BLT_DIR=$TRAVIS_BUILD_DIR/vendor/acquia/blt
 
 cache:
   directories:

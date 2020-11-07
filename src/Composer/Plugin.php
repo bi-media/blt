@@ -143,7 +143,7 @@ class Plugin implements PluginInterface, EventSubscriberInterface {
     elseif ($operation instanceof UpdateOperation) {
       $package = $operation->getTargetPackage();
     }
-    if (isset($package) && $package instanceof PackageInterface && $package->getName() == 'duden/blt') {
+    if (isset($package) && $package instanceof PackageInterface && $package->getName() == 'acquia/blt') {
       return $package;
     }
     return NULL;
@@ -161,10 +161,10 @@ class Plugin implements PluginInterface, EventSubscriberInterface {
       $this->io->write('<info>Creating BLT template files...</info>');
       if ($this->isNewProject()) {
         // The BLT command will not work because the .git dir doesn't exist yet.
-        $command = $this->getVendorPath() . '/duden/blt/bin/blt internal:create-project --ansi';
+        $command = $this->getVendorPath() . '/acquia/blt/bin/blt internal:create-project --ansi';
       }
       else {
-        $command = $this->getVendorPath() . '/duden/blt/bin/blt internal:add-to-project --ansi -n';
+        $command = $this->getVendorPath() . '/acquia/blt/bin/blt internal:add-to-project --ansi -n';
       }
       $success = $this->executeCommand($command, [], TRUE);
       if (!$success) {
@@ -209,7 +209,7 @@ class Plugin implements PluginInterface, EventSubscriberInterface {
    */
   protected function isNewProject() {
     $composer_json = json_decode(file_get_contents($this->getRepoRoot() . '/composer.json'), TRUE);
-    if (isset($composer_json['name']) && in_array($composer_json['name'], ['duden/blt-project', 'duden/blted8'])) {
+    if (isset($composer_json['name']) && in_array($composer_json['name'], ['acquia/blt-project', 'acquia/blted8'])) {
       return TRUE;
     }
     return FALSE;
