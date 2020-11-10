@@ -101,11 +101,12 @@ class UpdateCommand extends BltTasks {
    */
   protected function initializeBlt() {
     $this->updateSchemaVersionFile();
-    $this->taskExecStack()
-      ->dir($this->getConfigValue("repo.root"))
-      ->exec("composer drupal:scaffold")
-      ->setVerbosityThreshold(VerbosityThresholdInterface::VERBOSITY_VERBOSE)
-      ->run();
+    // We store drupal scaffold's files in our repo.
+    //    $this->taskExecStack()
+    //      ->dir($this->getConfigValue("repo.root"))
+    //      ->exec("composer drupal:scaffold")
+    //      ->setVerbosityThreshold(VerbosityThresholdInterface::VERBOSITY_VERBOSE)
+    //      ->run();
 
     // Reinitialize configuration now that project files exist.
     $config_initializer = new ConfigInitializer($this->getConfigValue('repo.root'), $this->input());
