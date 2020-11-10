@@ -266,7 +266,7 @@ WARNING;
    */
   protected function installGitHook($hook) {
     $fs = new Filesystem();
-    $project_hook_directory = $this->getConfigValue('repo.root') . "/.git/hooks";
+    $project_hook_directory = $this->getConfigValue('project.root') . "/.git/hooks";
     $project_hook = $project_hook_directory . "/$hook";
     if ($this->getConfigValue('git.hooks.' . $hook)) {
       $this->say("Installing $hook git hook...");
@@ -274,7 +274,7 @@ WARNING;
       $path_to_hook_source = rtrim($fs->makePathRelative($hook_source, $project_hook_directory), '/');
 
       $result = $this->taskFilesystemStack()
-        ->mkdir($this->getConfigValue('repo.root') . '/.git/hooks')
+        ->mkdir($this->getConfigValue('project.root') . '/.git/hooks')
         ->remove($project_hook)
         // phpcs:ignore
         ->symlink($path_to_hook_source, $project_hook)
