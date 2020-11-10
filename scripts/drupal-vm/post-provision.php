@@ -2,7 +2,7 @@
 <?php
 // phpcs:ignoreFile
 $alias_locations = [
-  "/vagrant/vendor/duden/blt/scripts/blt/alias",
+  "/vagrant/vendor/acquia/blt/scripts/blt/alias",
   // This is the location during "release:test" execution.
   "/var/www/blt/scripts/blt/alias",
 ];

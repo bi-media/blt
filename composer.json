@@ -1,5 +1,5 @@
 {
-    "name": "duden/blt",
+    "name": "acquia/blt",
     "type": "composer-plugin",
     "description": "BLT",
     "keywords": [
@@ -98,7 +98,7 @@
         "bin/blt.bat"
     ],
     "support": {
-        "issues": "https://github.com/bi-media/blt/issues",
+        "issues": "https://github.com/acquia/blt/issues",
         "docs": "https://docs.acquia.com/blt/"
     }
 }

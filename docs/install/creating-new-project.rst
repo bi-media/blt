@@ -19,7 +19,7 @@ To create a new Acquia BLT project, complete the following steps:
 
    .. code-block:: bash
 
-      composer create-project --no-interaction duden/blt-project my-project
+      composer create-project --no-interaction acquia/blt-project my-project
 
 #. Change to your project directory. For example:
 
@@ -31,7 +31,7 @@ To create a new Acquia BLT project, complete the following steps:
    shell to allow Bash to detect the new Acquia BLT alias.
 
 #. Customize your ``blt/blt.yml`` file to select an install profile. The
-   `build.yml <https://github.com/bi-media/blt/blob/10.x/config/build.yml>`__
+   `build.yml <https://github.com/acquia/blt/blob/10.x/config/build.yml>`__
    file includes all available configuration values.
 
    By default, Acquia BLT installs websites using the :doc:`Lightning
@@ -150,7 +150,7 @@ If you continue to have issues with Acquia BLT, review the following
 resources:
 
 -  :doc:`Review other Acquia BLT documentation pages </blt/>`.
--  `Search for relevant issues <https://github.com/bi-media/blt/issues>`__.
--  `Create a new issue <https://github.com/bi-media/blt/issues/new>`__.
+-  `Search for relevant issues <https://github.com/acquia/blt/issues>`__.
+-  `Create a new issue <https://github.com/acquia/blt/issues/new>`__.
 
 .. Next review date 20200424

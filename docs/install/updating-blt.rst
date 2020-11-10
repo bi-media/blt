@@ -19,14 +19,14 @@ latest version of Acquia BLT using Composer.
 
     .. code-block:: bash
 
-       composer update duden/blt --with-all-dependencies
+       composer update acquia/blt --with-all-dependencies
 
     This will cause Composer to update all of your dependencies (in accordance
     with your version constraints) and permit the latest version of Acquia BLT
     to be installed.
 
 #.  Examine the `release information
-    <https://github.com/bi-media/blt/releases>`__ to determine if there are
+    <https://github.com/acquia/blt/releases>`__ to determine if there are
     special update instructions for the new version.
 
 #.  Review and commit changes to your project files.

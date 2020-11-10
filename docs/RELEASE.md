@@ -8,16 +8,16 @@ To perform a release:
 1. [Create a release](#create-a-release)
 1. [Update the blt-project repo](#update-the-blt-project-repo)
 
-For major releases, coordinate with ORCA prior to starting this process to ensure global test suites don't break. Afterwards, update the README and default branches in duden/blt as well as duden/blt-project to use the new major release.
+For major releases, coordinate with ORCA prior to starting this process to ensure global test suites don't break. Afterwards, update the README and default branches in acquia/blt as well as acquia/blt-project to use the new major release.
 
 ## Check build statuses
 
-* [BLT 11.x](https://github.com/bi-media/blt):
-[![Build Status](https://travis-ci.com/duden/blt.svg?branch=11.x)](https://travis-ci.com/duden/blt)
-* [BLT 10.x](https://github.com/bi-media/blt):
-[![Build Status](https://travis-ci.com/duden/blt.svg?branch=10.x)](https://travis-ci.com/duden/blt)
-* [BLT 9.2.x](https://github.com/bi-media/blt):
-[![Build Status](https://travis-ci.com/duden/blt.svg?branch=9.2.x)](https://travis-ci.com/duden/blt)
+* [BLT 11.x](https://github.com/acquia/blt):
+[![Build Status](https://travis-ci.com/acquia/blt.svg?branch=11.x)](https://travis-ci.com/acquia/blt)
+* [BLT 10.x](https://github.com/acquia/blt):
+[![Build Status](https://travis-ci.com/acquia/blt.svg?branch=10.x)](https://travis-ci.com/acquia/blt)
+* [BLT 9.2.x](https://github.com/acquia/blt):
+[![Build Status](https://travis-ci.com/acquia/blt.svg?branch=9.2.x)](https://travis-ci.com/acquia/blt)
 
 ## Review issue labels
 

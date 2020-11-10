@@ -58,7 +58,7 @@ class UpdateCommand extends BltTasks {
   /**
    * Generates all necessary files for a brand new BLTed repo.
    *
-   * Called during `composer create-project duden/blt-project`.
+   * Called during `composer create-project acquia/blt-project`.
    *
    * @command internal:create-project
    *
@@ -244,11 +244,11 @@ class UpdateCommand extends BltTasks {
   }
 
   /**
-   * Cleans up undesired files left behind by duden/blt-project.
+   * Cleans up undesired files left behind by acquia/blt-project.
    */
   protected function cleanUpProjectTemplate() {
     $repo_root = $this->getConfigValue('repo.root');
-    // Remove files leftover from duden/blt-project.
+    // Remove files leftover from acquia/blt-project.
     $cleanupTask = $this->taskFilesystemStack();
     foreach (self::BLT_PROJECT_EXCLUDE_FILES as $file) {
       if ($file != 'README-template.md') {
@@ -261,7 +261,7 @@ class UpdateCommand extends BltTasks {
       ->run();
 
     if (!$result->wasSuccessful()) {
-      throw new BltException("Could not remove deprecated files provided by duden/blt-project.");
+      throw new BltException("Could not remove deprecated files provided by acquia/blt-project.");
     }
   }
 

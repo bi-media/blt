@@ -23,14 +23,14 @@ steps:
   - name: 'Setup project'
     plugin: Script
     script:
-     - "$SRC_DIR/vendor/duden/blt/scripts/probo/setup_project"
+     - "$SRC_DIR/vendor/acquia/blt/scripts/probo/setup_project"
 
   - name: 'Run tests'
     plugin: Script
     script:
-     - "$SRC_DIR/vendor/duden/blt/scripts/probo/run_tests"
+     - "$SRC_DIR/vendor/acquia/blt/scripts/probo/run_tests"
 
   - name: 'Deploy'
     plugin: Script
     script:
-     - "$SRC_DIR/vendor/duden/blt/scripts/probo/deploy_branch"
+     - "$SRC_DIR/vendor/acquia/blt/scripts/probo/deploy_branch"

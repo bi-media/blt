@@ -56,7 +56,7 @@ steps:
    .. code-block:: bash
 
       rm -rf vendor composer.lock
-      composer require duden/blt:^10.0 --no-update
+      composer require acquia/blt:^10.0 --no-update
       composer update
 
 #. Replace your ``.gitignore`` file with Acquia BLT's template ``.gitignore``,
@@ -64,7 +64,7 @@ steps:
 
    .. code-block:: bash
 
-      cp vendor/duden/blt/subtree-splits/blt-project/.gitignore .
+      cp vendor/acquia/blt/subtree-splits/blt-project/.gitignore .
 
 #. (*Optional*, but recommended) Replace your ``composer.json`` with Acquia
    BLT's template ``composer.json``, and re-add any packages or other
@@ -72,7 +72,7 @@ steps:
 
    .. code-block:: bash
 
-      cp vendor/duden/blt/subtree-splits/blt-project/composer.json .
+      cp vendor/acquia/blt/subtree-splits/blt-project/composer.json .
 
 #. Acquia BLT will place new files in your project directory. Review all
    new and modified files and commit them to Git.

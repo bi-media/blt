@@ -170,6 +170,6 @@ Selenium or PhantomJS.
 
    Connections to Headless Chrome will occasionally time out in containerized
    environments, such as Docker. For discussion and a possible solution, see
-   this `issue on GitHub <https://github.com/bi-media/blt/issues/2083>`__.
+   this `issue on GitHub <https://github.com/acquia/blt/issues/2083>`__.
 
 .. Next review date 20200422

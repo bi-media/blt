@@ -159,7 +159,7 @@ following steps:
 
     This will add a hooks directory in your project root based on `Acquia
     BLT's default Acquia Cloud hooks
-    <https://github.com/bi-media/blt/tree/10.x/scripts/cloud-hooks/hooks>`__.
+    <https://github.com/acquia/blt/tree/10.x/scripts/cloud-hooks/hooks>`__.
 
 #.  Commit the new directory and push it to your Acquia Git remote. Refer to
     the following example commands:

@@ -88,7 +88,7 @@ The solution is to invoke the ``chrome`` command with the ``--no-sandbox``
 option by patching your Acquia BLT installation. Patching your installation
 adds the ``--no-sandbox`` option to the `launchChrome() function in the Behat
 command
-<https://github.com/bi-media/blt/blob/10.x/src/Robo/Commands/Tests/BehatCommand.php#L178>`__.
+<https://github.com/acquia/blt/blob/10.x/src/Robo/Commands/Tests/BehatCommand.php#L178>`__.
 
 For information about how to apply patches to packages using Composer, see
 :doc:`/blt/developer/patches/`.
@@ -104,7 +104,7 @@ initializing Acquia Cloud Site Factory, the following notices may display:
 
 .. code-block:: text
 
-   <em class="placeholder">Notice</em>: Undefined index: HTTP_HOST in <em class="placeholder">require()</em> (line <em class="placeholder">119</em> of <em class="placeholder">/app/vendor/duden/blt/settings/blt.settings.php</em>). <pre class="backtrace">require(&#039;/app/vendor/duden/blt/settings/blt.settings.php&#039;) (Line: 797)
+   <em class="placeholder">Notice</em>: Undefined index: HTTP_HOST in <em class="placeholder">require()</em> (line <em class="placeholder">119</em> of <em class="placeholder">/app/vendor/acquia/blt/settings/blt.settings.php</em>). <pre class="backtrace">require(&#039;/app/vendor/acquia/blt/settings/blt.settings.php&#039;) (Line: 797)
    require(&#039;/app/docroot/sites/default/settings.php&#039;) (Line: 122)
    Drupal\Core\Site\Settings::initialize(&#039;/app/docroot&#039;, &#039;sites/default&#039;, Object) (Line: 1056)
    Drupal\Core\DrupalKernel-&gt;initializeSettings(Object) (Line: 271)
@@ -126,7 +126,7 @@ initializing Acquia Cloud Site Factory, the following notices may display:
    Notice: Undefined index: argv in Symfony\Component\Console\Input\ArgvInput->__construct() (line 53 of /app/vendor/symfony/console/Input/ArgvInput.php).
 
    Symfony\Component\Console\Input\ArgvInput->__construct(NULL) (Line: 113)
-   require('/app/vendor/duden/blt/settings/blt.settings.php') (Line: 797)
+   require('/app/vendor/acquia/blt/settings/blt.settings.php') (Line: 797)
    require('/app/docroot/sites/default/settings.php') (Line: 122)
    Drupal\Core\Site\Settings::initialize('/app/docroot', 'sites/default', Object) (Line: 1056)
    Drupal\Core\DrupalKernel->initializeSettings(Object) (Line: 656)

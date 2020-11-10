@@ -14,7 +14,7 @@ Tugboat
 
 Integrates Acquia BLT with the Tugboat CI service.
 
-Available on Github: https://github.com/bi-media/blt-tugboat
+Available on Github: https://github.com/acquia/blt-tugboat
 
 
 .. _blt-plugins-azure-piplines:
@@ -47,7 +47,7 @@ Integrates Acquia BLT with the ddev local development environment.
 Available on Github: https://github.com/lcatlett/blt-ddev
 
 To add your plugin to the list, open a `pull request on GitHub
-<https://github.com/bi-media/blt/issues>`__.
+<https://github.com/acquia/blt/issues>`__.
 
 
 .. Next review date 2020129

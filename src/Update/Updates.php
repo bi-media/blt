@@ -74,7 +74,7 @@ class Updates {
     $this->updater->removeComposerScript('post-create-project-cmd');
 
     // Change 'deploy' module key to 'prod'.
-    // @see https://github.com/bi-media/blt/pull/700.
+    // @see https://github.com/acquia/blt/pull/700.
     $project_config = $this->updater->getProjectYml();
     if (!empty($project_config['modules']['deploy'])) {
       $project_config['modules']['prod'] = $project_config['modules']['deploy'];
@@ -695,7 +695,7 @@ class Updates {
     }
 
     // Require blt-require-dev.
-    $composer_json['require-dev']['duden/blt-require-dev'] = $template_composer_json['require-dev']['duden/blt-require-dev'];
+    $composer_json['require-dev']['acquia/blt-require-dev'] = $template_composer_json['require-dev']['acquia/blt-require-dev'];
 
     $this->updater->writeComposerJson($composer_json);
 
@@ -841,7 +841,7 @@ class Updates {
       unset($composer_json['require']['drupal/memcache']);
       $composer_json['require']['acquia/memcache-settings'] = '*';
       $this->updater->writeComposerJson($composer_json);
-      $this->updater->getOutput()->writeln("Memcache settings have moved from duden/blt to acquia/memcache-settings, a separate Composer package, and additionally have been updated to use the stable Memcache 2.0 release. Your composer.json has been updated to depend on acquia/memcache-settings.");
+      $this->updater->getOutput()->writeln("Memcache settings have moved from acquia/blt to acquia/memcache-settings, a separate Composer package, and additionally have been updated to use the stable Memcache 2.0 release. Your composer.json has been updated to depend on acquia/memcache-settings.");
       $this->updater->getOutput()->writeln("");
       $this->updater->getOutput()->writeln("You must run `composer update acquia/memcache-settings drupal/memcache` and commit the resulting changes to composer.json and composer.lock if you wish to use these updated settings. Otherwise, you will need to provide your own Memcache settings in docroot/sites/settings. See the release notes for additional details.");
       $this->updater->getOutput()->writeln("");
@@ -859,10 +859,10 @@ class Updates {
   public function update_11000000() {
     $composer_json = $this->updater->getComposerJson();
     $template_composer_json = $this->updater->getTemplateComposerJson();
-    if (array_key_exists('duden/blt-require-dev', $composer_json['require-dev'])) {
-      $composer_json['require-dev']['duden/blt-require-dev'] = $template_composer_json['require-dev']['duden/blt-require-dev'];
+    if (array_key_exists('acquia/blt-require-dev', $composer_json['require-dev'])) {
+      $composer_json['require-dev']['acquia/blt-require-dev'] = $template_composer_json['require-dev']['acquia/blt-require-dev'];
       $this->updater->writeComposerJson($composer_json);
-      $this->updater->getOutput()->writeln("duden/blt-require-dev version has been updated in composer.json. You must run `composer update` and commit both composer.json and composer.lock to apply the changes.");
+      $this->updater->getOutput()->writeln("acquia/blt-require-dev version has been updated in composer.json. You must run `composer update` and commit both composer.json and composer.lock to apply the changes.");
     }
   }
 

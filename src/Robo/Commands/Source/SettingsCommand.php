@@ -174,7 +174,7 @@ WARNING;
       }
 
       $result = $this->taskWriteToFile($project_settings_file)
-        ->appendUnlessMatches('#vendor/duden/blt/settings/blt.settings.php#', 'require DRUPAL_ROOT . "/../vendor/duden/blt/settings/blt.settings.php";' . "\n")
+        ->appendUnlessMatches('#vendor/acquia/blt/settings/blt.settings.php#', 'require DRUPAL_ROOT . "/../vendor/acquia/blt/settings/blt.settings.php";' . "\n")
         ->appendUnlessMatches('#Do not include additional settings here#', $this->settingsWarning . "\n")
         ->append(TRUE)
         ->setVerbosityThreshold(VerbosityThresholdInterface::VERBOSITY_VERBOSE)

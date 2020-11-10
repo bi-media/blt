@@ -1,8 +1,8 @@
 # BLT
 
-![BLT logo of stylized sandwich](https://github.com/bi-media/blt/raw/11.x/docs/_static/blt-logo.png)
+![BLT logo of stylized sandwich](https://github.com/acquia/blt/raw/11.x/docs/_static/blt-logo.png)
 
-[![Build Status](https://travis-ci.com/duden/blt.svg?branch=11.x)](https://travis-ci.com/duden/blt) [![Packagist](https://img.shields.io/packagist/v/duden/blt.svg)](https://packagist.org/packages/duden/blt)
+[![Build Status](https://travis-ci.com/acquia/blt.svg?branch=11.x)](https://travis-ci.com/acquia/blt) [![Packagist](https://img.shields.io/packagist/v/acquia/blt.svg)](https://packagist.org/packages/acquia/blt)
 
 BLT (Build and Launch Tool) provides an automation layer for testing, building, and launching Drupal 8 applications.
 
@@ -53,10 +53,10 @@ Its scope is discretely defined. It is *not* intended to provide:
 
 ## Features
 
-* [Local Git Hooks](https://github.com/bi-media/blt/tree/11.x/scripts/git-hooks)
+* [Local Git Hooks](https://github.com/acquia/blt/tree/11.x/scripts/git-hooks)
     * pre-commit: Checks for Drupal coding standards compliance
     * commit-msg: Check for proper formatting and syntax
-* [Testing Framework](https://github.com/bi-media/blt/tree/11.x/template/tests).
+* [Testing Framework](https://github.com/acquia/blt/tree/11.x/template/tests).
     * Behat: default `local.yml` configuration, example tests, `FeatureContext.php`
     * PHPUnit: default tests for ensuring proper functioning of BLT provided components
 * [Commands to automate project tasks](https://docs.acquia.com/blt/developer/project-tasks/), like:

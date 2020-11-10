@@ -71,7 +71,7 @@ Acquia BLT includes additional commonly used commands, as follows:
      - Build a deployment artifact.
    * - ``blt artifact:deploy``
      - Build an artifact and deploy it to ``git.remotes``.
-   * - ``composer update duden/blt --with-dependencies``
+   * - ``composer update acquia/blt --with-dependencies``
      - Update Acquia BLT.
 
 

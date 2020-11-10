@@ -8,7 +8,7 @@ The following resources are available for support with BLT issues:
 - :doc:`/blt/` documentation on `docs.acquia.com <https://docs.acquia.com>`__
 - `Acquia BLT Knowledge Base
   <https://support.acquia.com/hc/en-us/search#stq=Acquia+BLT&stp=1>`__ on `support.acquia.com <https://support.acquia.com>`__
-- `Acquia BLT Github issue queue <https://github.com/bi-media/blt/issues>`__
+- `Acquia BLT Github issue queue <https://github.com/acquia/blt/issues>`__
   (read :doc:`/blt/contributing` before opening an issue or pull request on
   Github)
 - :ref:`Acquia Support <contact-acquia-support>` through a support ticket or
