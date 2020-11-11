@@ -266,6 +266,7 @@ WARNING;
    */
   protected function installGitHook($hook) {
     $fs = new Filesystem();
+    // We use custom config 'project.root' to get git root directory.
     $project_hook_directory = $this->getConfigValue('project.root') . "/.git/hooks";
     $project_hook = $project_hook_directory . "/$hook";
     if ($this->getConfigValue('git.hooks.' . $hook)) {
@@ -274,6 +275,7 @@ WARNING;
       $path_to_hook_source = rtrim($fs->makePathRelative($hook_source, $project_hook_directory), '/');
 
       $result = $this->taskFilesystemStack()
+        // We use custom config 'project.root' to get git root directory.
         ->mkdir($this->getConfigValue('project.root') . '/.git/hooks')
         ->remove($project_hook)
         // phpcs:ignore

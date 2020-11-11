@@ -87,6 +87,8 @@ class UpdateCommand extends BltTasks {
    * @throws \Acquia\Blt\Robo\Exceptions\BltException
    */
   public function addToProject() {
+    // We have different folder structure,
+    // that's why we can't use rsync.
     // $this->rsyncTemplate();
     $this->initializeBlt();
     $this->displayArt();
@@ -140,6 +142,8 @@ class UpdateCommand extends BltTasks {
    * @throws \Acquia\Blt\Robo\Exceptions\BltException
    */
   public function update(array $options = ['since' => InputOption::VALUE_REQUIRED]) {
+    // We have different folder structure,
+    // that's why we can't use rsync.
     // $this->rsyncTemplate();
 
     $starting_version = $options['since'] ?: $this->currentSchemaVersion;
