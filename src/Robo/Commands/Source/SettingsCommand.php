@@ -279,7 +279,8 @@ WARNING;
         ->mkdir($this->getConfigValue('project.root') . '/.git/hooks')
         ->remove($project_hook)
         // phpcs:ignore
-        ->symlink($path_to_hook_source, $project_hook)
+        // Replace to copy() since we have different folder name locally and in container
+        ->copy($hook_source, $project_hook)
         ->stopOnFail()
         ->setVerbosityThreshold(VerbosityThresholdInterface::VERBOSITY_VERBOSE)
         ->run();
